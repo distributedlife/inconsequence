@@ -1,0 +1,36 @@
+{
+  "name": "sequence",
+  "version": "1.0.0",
+  "description": "An increasing sequence of numbers. It'll escalate in linear time.",
+  "main": "src/sequence.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/distributedlife/sequence.git"
+  },
+  "keywords": [
+    "sequence"
+  ],
+  "author": "Ryan Boucher",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/distributedlife/sequence/issues"
+  },
+  "homepage": "https://github.com/distributedlife/sequence",
+  "devDependencies": {
+    "expect": "^1.6.0",
+    "gulp": "^3.8.11",
+    "gulp-coveralls": "^0.1.3",
+    "gulp-istanbul": "^0.8.1",
+    "gulp-jshint": "^1.10.0",
+    "gulp-mocha": "^2.0.1",
+    "gulp-plumber": "^1.0.0",
+    "jshint-stylish": "^1.0.1",
+    "sinon": "^1.14.1"
+  }
+}
