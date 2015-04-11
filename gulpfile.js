@@ -8,7 +8,7 @@ var istanbul = require('gulp-istanbul');
 var coveralls = require('gulp-coveralls');
 
 var paths = {
-  js: ['start-here.js', 'src/**/*.js', '!src/**/tests/*.js'],
+  js: ['src/**/*.js', 'src/**/tests/*.js'],
   scss: ['src/**/src/scss/*.scss'],
   css: ['src/**/public/*.css'],
   tests: ['tests/**/*.js', 'src/**/tests/*.js']
