@@ -1,5 +1,5 @@
 {
-  "name": "sequence",
+  "name": "distributedlife-sequence",
   "version": "1.0.0",
   "description": "An increasing sequence of numbers. It'll escalate in linear time.",
   "main": "src/sequence.js",
