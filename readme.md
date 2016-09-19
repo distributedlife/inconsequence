@@ -9,7 +9,7 @@ PR's welcome for more sequences.
 
 # Usage
 ```javascript
-import { linear, fibonacci } from' inconsequence;
+import { linear, fibonacci } from 'inconsequence';
 
 linear('my-key'); //1
 linear('my-key'); //2
