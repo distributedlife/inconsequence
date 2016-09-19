@@ -1,36 +1,40 @@
 {
-  "name": "distributedlife-sequence",
+  "name": "inconsequence",
   "version": "1.0.0",
-  "description": "An increasing sequence of numbers. It'll escalate in linear time.",
-  "main": "src/sequence.js",
-  "directories": {
-    "test": "tests"
-  },
+  "description": "A package for producing sequences",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "mocha --compilers js:babel-register -c -S -R progress src/**/*spec*.js",
+    "predist": "rm -rf dist",
+    "dist": "babel src --out-dir dist --sourceMaps inline --comments --copy-files --ignore **/*spec.js",
+    "prepublish": "npm run dist"
   },
+  "files": [
+    "package.json",
+    "dist/",
+    "readme.md"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/distributedlife/sequence.git"
+    "url": "https://github.com/distributedlife/inconsequence.git"
   },
   "keywords": [
-    "sequence"
+    "sequence",
+    "series",
+    "linear",
+    "fibonacci"
   ],
   "author": "Ryan Boucher",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/distributedlife/sequence/issues"
+    "url": "https://github.com/distributedlife/inconsequence/issues"
   },
-  "homepage": "https://github.com/distributedlife/sequence",
+  "homepage": "https://github.com/distributedlife/inconsequence",
   "devDependencies": {
-    "expect": "^1.6.0",
-    "gulp": "^3.8.11",
-    "gulp-coveralls": "^0.1.3",
-    "gulp-istanbul": "^0.8.1",
-    "gulp-jshint": "^1.10.0",
-    "gulp-mocha": "^2.0.1",
-    "gulp-plumber": "^1.0.0",
-    "jshint-stylish": "^1.0.1",
-    "sinon": "^1.14.1"
+    "babel-cli": "^6.14.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-register": "^6.14.0",
+    "chai": "^3.5.0"
   }
 }

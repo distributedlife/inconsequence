@@ -1,16 +1,25 @@
-# sequence
-Helps you manage a sequence. Starts with 1. Let's you track multiple sequences
+# inconsequence
+Tools for making sequences.
+
+Currently supported:
+- linear
+- fibonacci
+
+PR's welcome for more sequences.
 
 # Usage
 ```javascript
-require('distributedlife-sequence').next('my-key'); //1
-require('distributedlife-sequence').next('my-key'); //2
-require('distributedlife-sequence').next('different-key'); //1
-```
+import { linear, fibonacci } from' inconsequence;
 
-You can check to see if a key is already in use. Can be useful for existing key clashes.
+linear('my-key'); //1
+linear('my-key'); //2
+linear('different-key'); //1
 
-```javascript
-require('distributedlife-sequence').exists('my-key'); //true
-require('distributedlife-sequence').exists('saturday'); //false
+fibonacci('my-key'); //1
+fibonacci('my-key'); //1
+fibonacci('my-key'); //2
+fibonacci('my-key'); //3
+fibonacci('my-key'); //5
+fibonacci('my-key'); //8
+fibonacci('different-key'); //1
 ```
